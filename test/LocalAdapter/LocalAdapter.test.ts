@@ -2,11 +2,11 @@ import { Readable } from 'stream';
 import * as nativeFs from 'fs';
 import * as nativePath from 'path';
 
-import FileSystem from '../src/FileSystem';
-import LocalAdapter from '../src/Adapter/LocalAdapter';
+import FileSystem from '../../src/FileSystem';
+import LocalAdapter from '../../src/Adapter/LocalAdapter';
 
 const sleep = async () => new Promise((resolve) => {
-    setTimeout(() => resolve(), 50);
+    setTimeout(() => resolve(), 200);
 });
 
 describe('FileSystem API', () => {
